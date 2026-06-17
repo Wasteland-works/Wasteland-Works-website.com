@@ -1,51 +1,49 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
 
-    <title>Projects</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects - Wasteland Works</title>
 
     <link rel="stylesheet" href="style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
     <script src="supabase.js"></script>
-
 </head>
 
 <body>
 
-<header>
+    <div id="site-header"></div>
 
-    <h1>Projects</h1>
-
-</header>
-
-<nav>
-
-    <a href="index.html">Home</a>
-
-    <a href="projects.html">Projects</a>
-
-    <a href="about.html">About</a>
-
-    <a href="contact.html">Contact</a>
-
-
-</nav>
-
-<main>
-
-    <div id="projectContainer">
+    <main>
 
         <section class="card">
-            <h2>Loading Projects...</h2>
+
+            <h1>Projects</h1>
+
+            <p>
+                Explore our current and completed projects.
+            </p>
+
         </section>
 
-    </div>
+        <div id="projectContainer">
 
-</main>
+            <section class="card">
+                <h2>Loading Projects...</h2>
+            </section>
 
-<script src="projects.js"></script>
+        </div>
+
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="load-layout.js"></script>
+    <script src="projects.js"></script>
 
 </body>
+
 </html>
