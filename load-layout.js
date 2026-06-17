@@ -1,19 +1,16 @@
 async function loadLayout() {
 
-```
-const header = await fetch("header.html");
-const headerHtml = await header.text();
+    const headerResponse = await fetch("header.html");
+    const headerHtml = await headerResponse.text();
 
-document.getElementById("site-header").innerHTML =
-    headerHtml;
+    document.getElementById("site-header").innerHTML =
+        headerHtml;
 
-const footer = await fetch("footer.html");
-const footerHtml = await footer.text();
+    const footerResponse = await fetch("footer.html");
+    const footerHtml = await footerResponse.text();
 
-document.getElementById("site-footer").innerHTML =
-    footerHtml;
-```
-
+    document.getElementById("site-footer").innerHTML =
+        footerHtml;
 }
 
 loadLayout();
