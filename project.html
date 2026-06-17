@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects - Wasteland Works</title>
+
     <link rel="stylesheet" href="style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -10,18 +15,9 @@
 
 <body>
 
-<header>
-    <h1 id="projectTitle">Loading Project...</h1>
-</header>
+    <div id="site-header"></div>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-</nav>
-
-<main>
+    <main>
 
     <section class="card">
         <h2>Description</h2>
@@ -43,9 +39,13 @@
         <div id="fileList">Loading files...</div>
     </section>
 
-</main>
+    </main>
 
-<script src="project.js"></script>
+    <div id="site-footer"></div>
+
+    <script src="load-layout.js"></script>
+    <script src="projects.js"></script>
 
 </body>
+
 </html>
